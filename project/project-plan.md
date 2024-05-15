@@ -39,7 +39,7 @@ This dataset contains 5 CSVs: GlobalTemperatures.csv, GlobalLandTemperaturesByCo
 1. Retrieve data sets and set up a data pipeline. [#1][i1]
 2. Clean and standardize data formats. [#2][i2]
 3. Analyze the correlation between CO2 emissions and temperature. [#3][i3]
-4. statistical and visual analysis results. [#4][i4]
+4. Statistical and visual analysis results. [#4][i4]
 5. Identify trends and patterns. [#5][i5]
 
 [i1]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/1
