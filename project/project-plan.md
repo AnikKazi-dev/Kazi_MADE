@@ -18,19 +18,19 @@ By analyzing past data on CO2 levels and temperatures, we want to see if higher 
 
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
-### Datasource1: CO2_GHG_emissions-data
-* Metadata URL: https://www.kaggle.com/datasets/yoannboyere/co2-ghg-emissionsdata
-* Data URL: https://www.kaggle.com/datasets/yoannboyere/co2-ghg-emissionsdata/download?datasetVersionNumber=1
+### DataSource1: CO2 and Greenhouse Gas Emissions
+* Metadata URL: https://github.com/owid/co2-data/tree/master
+* Data URL: https://nyc3.digitaloceanspaces.com/owid-public/data/co2/owid-co2-data.csv
 * Data Type: CSV
 
-This dataset contains CO2 and GHG emissions for countries from 1750 until 2017.
+This dataset contains data on CO2 emissions (annual, per capita, cumulative and consumption-based), other greenhouse gases, energy mix, and other relevant metrics.
 
-### Datasource2: Climate Change: Earth Surface Temperature Data
-* Metadata URL: https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data
-* Data URL: https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data/download?datasetVersionNumber=2
+### DataSource2: Earth Surface Temperature Data
+* Metadata URL: https://figshare.com/articles/dataset/temperature_csv/3171766/1
+* Data URL: https://figshare.com/ndownloader/files/4938964
 * Data Type: CSV
 
-This dataset contains 5 CSVs: GlobalTemperatures.csv, GlobalLandTemperaturesByCountry.csv, GlobalLandTemperaturesByState.csv, GlobalLandTemperaturesByMajorCity.csv, GlobalLandTemperaturesByCity.csv. Starts from 1750 for average land temperature and 1850 for max and min land temperatures and global ocean and land temperatures.
+This dataset contains data from Kaggle, featuring 7 countries and 16 cities.
 
 ## Work Packages
 
