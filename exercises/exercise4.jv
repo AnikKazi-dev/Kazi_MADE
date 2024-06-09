@@ -1,0 +1,91 @@
+pipeline tempPipeline {
+    tempExtractor
+        -> tempFilePicker
+        -> tempTextFileInterpreter
+        -> tempCSVInterpreter
+        -> renameColumns1
+        -> renameColumns2
+        -> tempTableInterpreter
+        -> temperatureTransformer
+        -> battery_temperatureTransformer
+        -> tempLoader; 
+
+    block tempExtractor oftype GTFSExtractor {
+        url: "https://www.mowesta.com/data/measure/mowesta-dataset-20221107.zip";
+    }
+
+    block tempFilePicker oftype FilePicker {
+        path: "/data.csv";
+    }
+
+    block tempTextFileInterpreter oftype TextFileInterpreter { }
+
+    block tempCSVInterpreter oftype CSVInterpreter { 
+        delimiter: ";";
+    }
+   
+    block renameColumns1 oftype CellWriter {
+        at: range A1:E1;
+        write: ["id", "producer", "model", "month", "temperature"];
+    }
+
+    block renameColumns2 oftype CellWriter {
+        at: cell J1;
+        write: ["battery_temperature"];
+    }
+
+    constraint rangeConst1 oftype RangeConstraint {
+        lowerBound: 0;
+        lowerBoundInclusive: false;
+    }
+
+    valuetype positiveInt oftype integer {
+        constraints: [rangeConst1];
+    }
+
+    constraint rangeConst2 oftype RangeConstraint {
+        lowerBound: 1;
+        lowerBoundInclusive: true;
+        upperBound: 12;
+        upperBoundInclusive: true;
+    }
+
+    valuetype months oftype integer {
+        constraints: [rangeConst2];
+    }
+
+    block temperatureTransformer oftype TableTransformer {
+        inputColumns: ["temperature"];
+        outputColumn: "temperature";
+        use: tempConverter;
+    }
+
+    block battery_temperatureTransformer oftype TableTransformer {
+        inputColumns: ["battery_temperature"];
+        outputColumn: "battery_temperature";
+        use: tempConverter;
+    }
+
+    transform tempConverter {
+        from celsius oftype decimal;
+        to fahrenheit oftype decimal;
+        fahrenheit: (celsius*9/5)+32;
+    }
+
+    block tempTableInterpreter oftype TableInterpreter {
+        header: true;
+        columns:[
+            "id" oftype positiveInt,
+            "producer" oftype text,
+            "model" oftype text,
+            "month" oftype months,
+            "temperature" oftype decimal,
+            "battery_temperature" oftype decimal
+        ];
+    }
+
+    block tempLoader oftype SQLiteLoader {
+        table: "temperatures";
+        file: "./temperatures.sqlite";
+    }
+}
