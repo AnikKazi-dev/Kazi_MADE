@@ -52,4 +52,4 @@ This dataset contains data from Kaggle, featuring 7 countries and 16 cities.
 [i5]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/5
 [i6]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/6
 [i7]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/7
-[i8]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/7
+[i8]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/8
