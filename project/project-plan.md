@@ -38,12 +38,18 @@ This dataset contains data from Kaggle, featuring 7 countries and 16 cities.
 
 1. Retrieve data sets and set up a data pipeline. [#1][i1]
 2. Clean and standardize data formats. [#2][i2]
-3. Analyze the correlation between CO2 emissions and temperature. [#3][i3]
-4. Statistical and visual analysis results. [#4][i4]
-5. Identify trends and patterns. [#5][i5]
+3. Write data report [#3][i3]
+4. Automation testing [#4][i4]
+5. Analyze the correlation between CO2 emissions and temperature. [#5][i5]
+6. Statistical and visual analysis results. [#6][i6]
+7. Test CI. [#7][i7]
+8. Write the final report. [#8][i8]
 
 [i1]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/1
 [i2]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/2
 [i3]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/3
 [i4]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/4
 [i5]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/5
+[i6]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/6
+[i7]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/7
+[i8]: https://github.com/AnikKazi-dev/Kazi_MADE/issues/7
