@@ -21,7 +21,7 @@ pipeline tempPipeline {
     block tempTextFileInterpreter oftype TextFileInterpreter { }
 
     block tempCSVInterpreter oftype CSVInterpreter { 
-        delimiter: ";";
+        delimiter: ";" ;
     }
    
     block renameColumns1 oftype CellWriter {
