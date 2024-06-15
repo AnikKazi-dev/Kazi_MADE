@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - exercises/**
+      - project/** # Ensure that changes in the project folder also trigger the workflow
 
 jobs:
   exercise-feedback:
@@ -89,3 +90,14 @@ jobs:
           STATUS: ${{ steps.ex_feedback.outputs.score_ex5 }}
           COLOR: 84714F
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  run-test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run test script
+        run: |
+          chmod +x project/test.sh
+          ./project/test.sh
