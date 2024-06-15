@@ -1,0 +1,29 @@
+name: Exercise Feedback
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - /**
+
+jobs:
+  run-test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install pandas
+        run: |
+          pip install pandas
+
+      - name: Run test script
+        run: |
+          chmod +x project/test.sh
+          project/test.sh

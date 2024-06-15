@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - exercises/**
-      - project/** # Ensure that changes in the project folder also trigger the workflow
 
 jobs:
   exercise-feedback:
@@ -38,11 +37,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
-
-      # Install pandas
-      - name: Install pandas
-        run: |
-          pip install pandas
 
       # Run grading feedback
       - name: Exercise feedback
@@ -95,23 +89,3 @@ jobs:
           STATUS: ${{ steps.ex_feedback.outputs.score_ex5 }}
           COLOR: 84714F
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  run-test-script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-
-      - name: Install pandas
-        run: |
-          pip install pandas
-
-      - name: Run test script
-        run: |
-          chmod +x project/test.sh
-          project/test.sh
