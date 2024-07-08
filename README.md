@@ -53,7 +53,7 @@ To set up this project, follow these steps:
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/climate-confluence.git
+   git clone https://github.com/AnikKazi-dev/Kazi_MADE.git
    cd climate-confluence
 
 
