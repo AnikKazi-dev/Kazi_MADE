@@ -33,9 +33,12 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
 3. **Load**
    - Saves the processed data into an SQLite database.
 
-<p align="center">
-  <img src="project/assets/ETL_Pipeline_Diagram.png" width="256" hspace="4">
-</p>
+<figure align="center" style="width:100%">
+    <img src="project/assets/ETL_Pipeline_Diagram.png"
+         alt="ETL Pipeline Flow"
+         style="width:60%">
+    <figcaption>Figure 1: ETL Pipeline</figcaption>
+</figure>
 
 ### ETL Pipeline Components:
 - **DataExtractor**
