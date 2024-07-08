@@ -33,6 +33,10 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
 3. **Load**
    - Saves the processed data into an SQLite database.
 
+<p align="center">
+  <img src="project/assets/ETL_Pipeline_Diagram.png" width="256" hspace="4">
+</p>
+
 ### ETL Pipeline Components:
 - **DataExtractor**
   - `fetch_csv(url)`: Loads data into a Pandas DataFrame.
