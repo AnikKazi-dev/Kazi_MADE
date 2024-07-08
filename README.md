@@ -1,3 +1,63 @@
+# Climate Confluence: Analyzing the Impact of CO2 Emissions on Global Temperature Trends
+
+## Project Overview
+This project, "Climate Confluence: Analyzing the Impact of CO2 Emissions on Global Temperature Trends," examines the correlation between CO2 emissions and global temperature changes. The study utilizes datasets on CO2 emissions and global temperatures to explore this relationship, aiming to provide evidence for effective climate change strategies.
+
+## Contents
+- [Introduction](#introduction)
+- [Datasets](#datasets)
+- [Data Pipeline](#data-pipeline)
+- [Project Setup](#project-setup)
+- [Analysis and Results](#analysis-and-results)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Introduction
+The primary objective of this project is to understand how CO2 emissions influence global temperatures. By analyzing historical data, we aim to identify trends and correlations that highlight the impact of CO2 emissions on global warming.
+
+## Datasets
+We have used two main datasets for this analysis:
+1. **CO2 and Greenhouse Gas Emissions Dataset**
+   - **Metadata URL:** [GitHub Repository](https://github.com/owid/co2-data/tree/master)
+   - **Data URL:** [Download CSV](https://nyc3.digitaloceanspaces.com/owid-public/data/co2/owid-co2-data.csv)
+2. **Earth Surface Temperature Data**
+   - **Metadata URL:** [Figshare](https://figshare.com/articles/dataset/temperature_csv/3171766/1)
+   - **Data URL:** [Download CSV](https://figshare.com/ndownloader/files/4938964)
+
+## Data Pipeline
+The project follows an ETL (Extract, Transform, Load) pipeline to process the data:
+1. **Extract**
+   - Fetches CSV data from specified URLs.
+2. **Transform**
+   - Cleans and preprocesses the data, including handling null values, converting temperatures from Fahrenheit to Celsius, and renaming columns.
+3. **Load**
+   - Saves the processed data into an SQLite database.
+
+### ETL Pipeline Components:
+- **DataExtractor**
+  - `fetch_csv(url)`: Loads data into a Pandas DataFrame.
+- **DataTransformer**
+  - `select_columns(df)`: Selects specific columns.
+  - `remove_null(df)`: Removes rows with null values.
+  - `drop_zero_values(df)`: Drops rows with zero values.
+  - `rename_columns(df)`: Renames columns.
+  - `convert_fahrenheit(df)`: Converts Fahrenheit to Celsius.
+  - `perform_join(df1, df2, join_columns)`: Joins DataFrames.
+  - `process_data(df)`: Executes all transformation steps.
+- **DataLoader**
+  - `create_directory()`: Ensures the target directory exists.
+  - `save_to_sqlite(df, table_name)`: Saves DataFrame to SQLite.
+
+## Project Setup
+To set up this project, follow these steps:
+
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/yourusername/climate-confluence.git
+   cd climate-confluence
+
+
+
 # Exercise Badges
 
 ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex1) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex2) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex3) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex4) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex5)
