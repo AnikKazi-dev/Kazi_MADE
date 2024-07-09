@@ -31,7 +31,7 @@ We have used two main datasets for this analysis:
 ## Data Pipeline
 The project follows an ETL (Extract, Transform, Load) pipeline to process the data:
 
-<figure align="center" style="width:100%">
+<figure align="center" style="width:120%">
     <img src="project/assets/ETL_Pipeline_Diagram.png"
          alt="ETL Pipeline Flow"
          style="width:60%">
