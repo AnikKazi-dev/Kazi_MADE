@@ -37,7 +37,7 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
          style="width:100">
     <figcaption>Figure: ETL Pipeline</figcaption>
 </figure>
-
+\
 
 1. **Extract**
    - Fetches CSV data from specified URLs.
