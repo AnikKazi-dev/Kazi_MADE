@@ -38,10 +38,6 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
     <figcaption>Figure: ETL Pipeline</figcaption>
 </figure>
 
-
-
-
-
 1. **Extract**
    - Fetches CSV data from specified URLs.
 2. **Transform**
@@ -49,6 +45,7 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
 3. **Load**
    - Saves the processed data into an SQLite database.
 
+For more details check [Data Report](https://github.com/AnikKazi-dev/Kazi_MADE/blob/main/project/data-report.pdf)
 
 ## Project Setup
 To set up this project, follow these steps:
@@ -57,6 +54,10 @@ To set up this project, follow these steps:
    ```sh
    git clone https://github.com/AnikKazi-dev/Kazi_MADE.git
    cd Kazi_MADE
+
+## Analysis and Results
+
+[Analysis and Results](https://github.com/AnikKazi-dev/Kazi_MADE/blob/main/project/analysis-report.pdf)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
