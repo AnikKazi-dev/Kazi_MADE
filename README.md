@@ -35,11 +35,11 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
     <img src="project/assets/ETL_Pipeline_Diagram.png"
          alt="ETL Pipeline Flow"
          style="width:60%">
-    <figcaption>Figure 1: ETL Pipeline</figcaption>
+    <figcaption>Figure: ETL Pipeline</figcaption>
 </figure>
 
 
-1. **Extract**
+1. # **Extract**
    - Fetches CSV data from specified URLs.
 2. **Transform**
    - Cleans and preprocesses the data, including handling null values, converting temperatures from Fahrenheit to Celsius, and renaming columns.
