@@ -29,7 +29,7 @@ We have used two main datasets for this analysis:
    - **Data URL:** [Download CSV](https://figshare.com/ndownloader/files/4938964)
 
 ## Data Pipeline
-The project follows an ETL (Extract, Transform, Load) pipeline to process the data:
+The project follows an [ETL pipeline](https://github.com/AnikKazi-dev/Kazi_MADE/blob/main/project/pipeline.py) (Extract, Transform, Load) to process the data:
 
 <figure align="center" style="width:100">
     <img src="project/assets/ETL_Pipeline_Diagram.png"
