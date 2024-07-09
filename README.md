@@ -57,7 +57,7 @@ To set up this project, follow these steps:
 
 ## Analysis and Results
 
-[Analysis and Results](https://github.com/AnikKazi-dev/Kazi_MADE/blob/main/project/analysis-report.pdf)
+For detailed Analysis and Results please check the [Analysis Report](https://github.com/AnikKazi-dev/Kazi_MADE/blob/main/project/analysis-report.pdf)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
