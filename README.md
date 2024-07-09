@@ -52,6 +52,10 @@ To set up this project, follow these steps:
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Acknowledgments
+This project was conducted by Kazi Anik Islam at Friedrich-Alexander-Universität Erlangen-Nürnberg in a course named Methods of Advanced Data Engineering. Special thanks to the providers of the CO2 emissions and temperature datasets.
+
+
 # Exercise Badges
 
 ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex1) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex2) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex3) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex4) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex5)
