@@ -1,3 +1,16 @@
+## Exercises
+
+During the semester you will need to complete exercises using [Jayvee](https://github.com/jvalue/jayvee). You **must** place your submission in the `exercises` folder in your repository and name them according to their number from one to five: `exercise<number from 1-5>.jv`.
+
+In regular intervalls, exercises will be given as homework to complete during the semester. Details and deadlines will be discussed in the lecture, also see the [course schedule](https://made.uni1.de/). At the end of the semester, you will therefore have the following files in your repository:
+
+1. `./exercises/exercise1.jv`
+2. `./exercises/exercise2.jv`
+3. `./exercises/exercise3.jv`
+4. `./exercises/exercise4.jv`
+5. `./exercises/exercise5.jv`
+
+
 # Climate Confluence: Analyzing the Impact of CO2 Emissions on Global Temperature Trends
 
 ## Project Overview
@@ -79,18 +92,6 @@ Your data engineering project will run alongside lectures during the semester. W
 ### Exporting a Jupyter Notebook
 
 Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
-
-## Exercises
-
-During the semester you will need to complete exercises using [Jayvee](https://github.com/jvalue/jayvee). You **must** place your submission in the `exercises` folder in your repository and name them according to their number from one to five: `exercise<number from 1-5>.jv`.
-
-In regular intervalls, exercises will be given as homework to complete during the semester. Details and deadlines will be discussed in the lecture, also see the [course schedule](https://made.uni1.de/). At the end of the semester, you will therefore have the following files in your repository:
-
-1. `./exercises/exercise1.jv`
-2. `./exercises/exercise2.jv`
-3. `./exercises/exercise3.jv`
-4. `./exercises/exercise4.jv`
-5. `./exercises/exercise5.jv`
 
 ### Exercise Feedback
 
