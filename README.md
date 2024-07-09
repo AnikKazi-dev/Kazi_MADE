@@ -1,15 +1,6 @@
-## Exercises
+# Exercise Badges
 
-During the semester you will need to complete exercises using [Jayvee](https://github.com/jvalue/jayvee). You **must** place your submission in the `exercises` folder in your repository and name them according to their number from one to five: `exercise<number from 1-5>.jv`.
-
-In regular intervalls, exercises will be given as homework to complete during the semester. Details and deadlines will be discussed in the lecture, also see the [course schedule](https://made.uni1.de/). At the end of the semester, you will therefore have the following files in your repository:
-
-1. `./exercises/exercise1.jv`
-2. `./exercises/exercise2.jv`
-3. `./exercises/exercise3.jv`
-4. `./exercises/exercise4.jv`
-5. `./exercises/exercise5.jv`
-
+![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex1) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex2) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex3) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex4) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex5)
 
 # Climate Confluence: Analyzing the Impact of CO2 Emissions on Global Temperature Trends
 
@@ -69,9 +60,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 This project was conducted by Kazi Anik Islam at Friedrich-Alexander-Universität Erlangen-Nürnberg in a course named Methods of Advanced Data Engineering. Special thanks to the providers of the CO2 emissions and temperature datasets.
 
 
-# Exercise Badges
 
-![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex1) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex2) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex3) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex4) ![](https://byob.yarr.is/AnikKazi-dev/Kazi_MADE/score_ex5)
 
 # Methods of Advanced Data Engineering Template Project
 
