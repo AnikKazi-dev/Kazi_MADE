@@ -30,12 +30,6 @@ We have used two main datasets for this analysis:
 
 ## Data Pipeline
 The project follows an ETL (Extract, Transform, Load) pipeline to process the data:
-1. **Extract**
-   - Fetches CSV data from specified URLs.
-2. **Transform**
-   - Cleans and preprocesses the data, including handling null values, converting temperatures from Fahrenheit to Celsius, and renaming columns.
-3. **Load**
-   - Saves the processed data into an SQLite database.
 
 <figure align="center" style="width:100%">
     <img src="project/assets/ETL_Pipeline_Diagram.png"
@@ -43,6 +37,15 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
          style="width:60%">
     <figcaption>Figure 1: ETL Pipeline</figcaption>
 </figure>
+<br>
+1. **Extract**
+   - Fetches CSV data from specified URLs.
+2. **Transform**
+   - Cleans and preprocesses the data, including handling null values, converting temperatures from Fahrenheit to Celsius, and renaming columns.
+3. **Load**
+   - Saves the processed data into an SQLite database.
+
+
 
 
 ## Project Setup
