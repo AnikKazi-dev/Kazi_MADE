@@ -40,20 +40,6 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
     <figcaption>Figure 1: ETL Pipeline</figcaption>
 </figure>
 
-### ETL Pipeline Components:
-- **DataExtractor**
-  - `fetch_csv(url)`: Loads data into a Pandas DataFrame.
-- **DataTransformer**
-  - `select_columns(df)`: Selects specific columns.
-  - `remove_null(df)`: Removes rows with null values.
-  - `drop_zero_values(df)`: Drops rows with zero values.
-  - `rename_columns(df)`: Renames columns.
-  - `convert_fahrenheit(df)`: Converts Fahrenheit to Celsius.
-  - `perform_join(df1, df2, join_columns)`: Joins DataFrames.
-  - `process_data(df)`: Executes all transformation steps.
-- **DataLoader**
-  - `create_directory()`: Ensures the target directory exists.
-  - `save_to_sqlite(df, table_name)`: Saves DataFrame to SQLite.
 
 ## Project Setup
 To set up this project, follow these steps:
@@ -63,7 +49,8 @@ To set up this project, follow these steps:
    git clone https://github.com/AnikKazi-dev/Kazi_MADE.git
    cd Kazi_MADE
 
-
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 # Exercise Badges
 
