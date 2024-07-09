@@ -34,7 +34,7 @@ The project follows an ETL (Extract, Transform, Load) pipeline to process the da
 <figure align="center" style="width:100">
     <img src="project/assets/ETL_Pipeline_Diagram.png"
          alt="ETL Pipeline Flow"
-         style="width:60%">
+         style="width:100">
     <figcaption>Figure: ETL Pipeline</figcaption>
 </figure>
 
